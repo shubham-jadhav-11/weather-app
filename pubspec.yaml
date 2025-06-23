@@ -1,0 +1,58 @@
+name: weather_app
+description: A new Flutter project with a cool UI to display weather information using OpenWeather API.
+
+# The following line prevents the package from being accidentally published to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+# Minimum required SDK version for this project
+environment:
+  sdk: ">=2.19.0 <4.0.0"  # Adjust as per your SDK compatibility
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  geolocator: ^13.0.1
+  # Add HTTP package for API calls
+  http: ^1.2.2
+
+  # Provider package for state management
+  provider: ^6.1.2
+
+  # Google Fonts package to use custom fonts
+  google_fonts: ^6.2.1
+
+  # Intl package for date and number formatting
+  intl: ^0.19.0
+
+  # Cupertino icons for iOS styled icons
+  cupertino_icons: ^1.0.2
+  flutter_dotenv: ^5.1.0
+  cached_network_image: ^3.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Flutter lints to encourage good coding practices
+  flutter_lints: ^5.0.0
+
+flutter:
+  # This ensures that the Material Icons font is included
+  uses-material-design: true
+
+  # Add custom fonts, if necessary, by uncommenting the fonts section
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: fonts/CustomFont-Regular.ttf
+  #       - asset: fonts/CustomFont-Bold.ttf
+  #         weight: 700
+
+  # To add assets (like images), uncomment the assets section
+  assets:
+    - assets/p14.png
+    - assets/icon.png
+    - .env
